@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_8d5l8fzk5b87iudi.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Zzz</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#projects">项目</a></li>
+                    <li><a href="#skills">技能</a></li>
+                    <li><a href="#contact">联系</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <span class="light-icon">☀️</span>
+                <span class="dark-icon">🌙</span>
+                <div class="toggle-ball"></div>
+            </div>
+            <div class="mobile-menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>你好，我是<span class="highlight">Zzz</span></h1>
+                <h2>未来的ACM获得者</h2>
+                <p>CS真是有趣</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">查看作品</a>
+                    <a href="#contact" class="btn secondary">联系我</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-container">
+                    <div class="avatar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>我是一名正在读书的计算机科学与技术专业的学生，喜欢探索一切有趣的CS技术</p>
+                    <p>目前已掌握诸多前端开发技术以及各种花里胡哨的编程语言</p>
+                    <div class="code-display">
+                        <p>
+                        <pre><code>print("Hello, World!")</code></pre>
+                        </p>
+                        <p>
+                        <pre><code>printf("Hello, World!\n")</code></pre>
+                        </p>
+                        <p>
+                        <pre><code>cout &lt;&lt; "Hello, World!" &lt;&lt; endl;</code></pre>
+                        </p>
+                        <p>
+                        <pre><code>System.out.println("Hello, World!")</code></pre>
+                        </p>
+                        <p>
+                        <pre><code>console.log("Hello, World!")</code></pre>
+                        </p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/zzq132" title="My_Github" style="text-decoration: none;"><i
+                                class="iconfont icon-github social-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">我的项目</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('./assets/shopping.png');"></div>
+                    <div class="project-content">
+                        <h3>在线购物平台</h3>
+                        <p>一个功能齐全的在线购物平台，包括产品列表、购物车、结账和用户账户等</p>
+                        <div class="project-tags">
+                            <span>Vue</span>
+                            <span>Element UI</span>
+                            <span>Vue-Router</span>
+                            <span>Pinia</span>
+                            <span>Axios</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zzq132/E-commerce-Platform" class="project-link">查看项目</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('./assets/tourism.png');"></div>
+                    <div class="project-content">
+                        <h3>旅行网站</h3>
+                        <p>一个非常美观的旅行宣传网站,同时该网站具有良好的响应性，可以自适应多种屏幕尺寸</p>
+                        <div class="project-tags">
+                            <span>Bootstrap5</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div><br>
+                        <div class="project-links" style="position: relative; top:18px">
+                            <a href="https://github.com/zzq132/Bootstrap5-Website" class="project-link">查看项目</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('./assets/blog.png');"></div>
+                    <div class="project-content">
+                        <h3>博客网站</h3>
+                        <p>一个基于Flask开发的博客网站，实现了用户管理，文章发表等诸多功能</p>
+                        <div class="project-tags">
+                            <span>Flask</span>
+                            <span>Python</span>
+                            <span>Jinja2</span>
+                            <span>Bootstrap</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zzq132/FlaskBlogSystem" class="project-link">查看项目</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">我的技能</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>语言</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-name">HTML/CSS/JavaScript</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">C/C++</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Java</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>前端</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Vue</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Bootstrap</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Tailwind</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>后端</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-name">Flask</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">MySQL</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>其他</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-name">Git</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Docker</div>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-container">
+
+                <div class="contact-item" style="position: relative; left: 55px;">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <h3>邮箱</h3>
+                        <p>winds2004318@163.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <h3>位置</h3>
+                        <p>昆明，中国</p>
+                    </div>
+                </div>
+                <div class="contact-item" style="position: relative; left: 7px;">
+                    <div class="contact-icon">
+                        <i class="iconfont icon-github"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Github</h3>
+                        <p>zzq132(Zzz)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zzz 保留所有权利.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
